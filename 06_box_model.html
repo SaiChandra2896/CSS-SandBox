@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model / margin and padding</title>
+    <style>
+        /* CSS reset */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            background: lightgray;
+            border: 5px green solid;
+            width: 500px;
+
+            /* padding on all sides */
+            padding: 20px;
+
+            /* padding in detail */
+            padding-top: 20px;
+            padding-left: 10px;
+            padding-bottom: 20px;
+            padding-right: 10px;
+
+            /* padding short hand */
+            padding: 20px 10px 20px 10px;
+            padding: 20px 10px;
+            
+            /* margin on all sides */
+            margin: 20px;
+        }
+        .box p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Box 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum nisi laborum, quasi facilis harum molestiae consequatur aut amet cum.</p>
+    </div>
+    <div class="box">
+        <h3>Box 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum nisi laborum, quasi facilis harum molestiae consequatur aut amet cum.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and align</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+        }
+        .container {
+            /* width: 900px; */
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .clr {
+            clear: both;
+        }
+        .box {
+            border: 3px solid black;
+            margin-bottom: 15px;
+            padding: 20px;
+            background: lightgrey;
+        }
+
+        .box p {
+            text-align: center;
+        }
+
+        #box-2 {
+            float: left;
+            width: 68%;
+        }
+
+        #box-3 {
+            float: right;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h3>Heading 1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ut quod vero dolorem impedit suscipit nostrum veritatis hic aut voluptates.</p>
+        </div>
+        <div id="box-2" class="box">
+            <h3>Heading 2</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ut quod vero dolorem impedit suscipit nostrum veritatis hic aut voluptates.</p>
+        </div>
+        <div id="box-3" class="box">
+            <h3>Heading 3</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ut quod vero dolorem impedit suscipit nostrum veritatis hic aut voluptates.</p>
+        </div>
+        <div class="clr"></div>
+        <div id="box-4" class="box">
+            <h3>Heading 3</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ut quod vero dolorem impedit suscipit nostrum veritatis hic aut voluptates.</p>
+        </div>
+    </div>
+</body>
+</html>
